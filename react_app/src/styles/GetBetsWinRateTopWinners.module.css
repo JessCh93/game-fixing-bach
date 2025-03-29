@@ -1,0 +1,56 @@
+﻿.customTooltip {
+    display: inline-block;
+    text-align: left;
+    background-color: whitesmoke;
+    border: 1px solid #bdbcbc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.cont {
+    border-radius: 0.50rem;
+    display: block;
+    padding: 25px;
+    margin: 8px auto;
+    width: 900px;
+    height: 500px;
+    box-shadow: -4px 8px 5px 0 rgba(137, 137, 137, 0.34);
+    background: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.title > h4 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.errCont {
+    border-radius: 0.50rem;
+    display: block;
+    padding: 25px;
+    margin: 8px auto;
+    width: 900px;
+    height: 80px;
+    box-shadow: -4px 8px 5px 0 rgba(137, 137, 137, 0.34);
+    background: white;
+}
+
+@media (max-width: 768px ) {
+    .cont {
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+    }
+    .errCont{
+        width: 95%;
+    }
+}

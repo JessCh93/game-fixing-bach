@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.myLoader {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    animation: rotate 4s infinite linear;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

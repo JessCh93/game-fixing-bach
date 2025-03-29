@@ -1,0 +1,19 @@
+
+.myInput {
+    padding: 5px 15px;
+    margin: 10px;
+    color: white;
+    font-size: 17px;
+    background: dodgerblue;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+.myInput::placeholder {
+    color: wheat;
+}
+
+@media (max-width: 700px) {
+    .myInput {
+        width: 100px;
+    }
+}

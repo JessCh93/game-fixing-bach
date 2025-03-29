@@ -1,0 +1,71 @@
+.cont {
+    display: block;
+    box-shadow: -4px 8px 5px 0 rgba(137, 137, 137, 0.34);
+    background: white;
+    border-radius: 0.25rem;
+    width: 900px;
+    height: auto;
+    padding: 1em;
+    margin: 15px auto;
+}
+
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.bets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+}
+
+.errCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -4px 8px 5px 0 rgba(137, 137, 137, 0.34);
+    background: white;
+    border-radius: 0.25rem;
+    width: 900px;
+    height: 80px;
+    margin: 15px auto;
+}
+
+.dataSource {
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bets {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .bets > *:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px ) {
+    .cont {
+        width: 95%
+    }
+    .bets {
+        grid-template-columns: 1fr;
+    }
+    .errCont{
+        width: 500px;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+ 
